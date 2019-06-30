@@ -5,11 +5,3 @@ services:
     image: karstendick/book-laurels-frontend:latest
     ports:
       - '80:80'
-
-  # sample-prod:
-  #   container_name: sample-prod
-  #   build:
-  #     context: .
-  #     dockerfile: Dockerfile-prod
-  #   ports:
-  #     - '80:80'
