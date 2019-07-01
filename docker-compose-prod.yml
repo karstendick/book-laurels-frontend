@@ -5,3 +5,11 @@ services:
     image: karstendick/book-laurels-frontend:latest
     ports:
       - '80:80'
+    depends_on:
+      - backend
+  backend:
+    image: karstendick/book-laurels-backend:latest
+    ports:
+      - '5000:5000'
+    env_file:
+      - .env
