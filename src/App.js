@@ -7,7 +7,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:5000/hello')
+        fetch('http://booklaurels.com:5000/hello')
         .then(res => res.json())
         .then((data) => {
             console.log(data)
